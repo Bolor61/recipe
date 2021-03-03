@@ -5,6 +5,7 @@ export const elements = {
   searchInput: document.querySelector('.search__field'),
   searchResultDiv: document.querySelector('.results'),
   searchResultList: document.querySelector('.results__list'),
+  pageButtons: document.querySelector('.results__pages'),
 };
 
 export const elementStrings = {
@@ -20,10 +21,10 @@ export const clearLoader = () => {
 export const renderLoader = (parent) => {
   const loader = `
   <div class="${elementStrings.loader}">
- <svg>
-  <use href="img/icons.svg#icon-cw"</use>
-  </svg>
-   </div>`;
+      <svg>
+        <use href="img/icons.svg#icon-cw"</use>
+      </svg>
+  </div>`;
 
   parent.insertAdjacentHTML('afterbegin', loader);
 };
