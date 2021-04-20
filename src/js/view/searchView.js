@@ -12,7 +12,6 @@ import { elements } from './base';
 // tuhain neg element iig delgetsen deer gargaj ugdug function
 // private function
 const renderRecipe = (recipe) => {
-  console.log(recipe);
   const markup = `
    <li>
   <a class="results__link" href="#${recipe.recipe_id}">
